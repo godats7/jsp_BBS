@@ -1,0 +1,15 @@
+DB생성
+create schema bbs;
+
+
+유저테이블생성
+create table user(
+userID varchar(20), userPassword varchar(20), userName varchar(20), userGender varchar(20), userEmail varchar(50), primary key (userID))
+
+테스트데이터
+insert into user values('gildong','123456','홍길동','남자','gildong@naver.com')
+
+bbs table 생성
+create table bbs(
+bbsID int, bbsTitle varchar(50), userID varchar(20), bbsDate datetime, bbsContent varchar(2048), bbsAvailable int, primary key(bbsID))
+

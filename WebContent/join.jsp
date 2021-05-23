@@ -32,8 +32,8 @@
 					 data-toggle="dropdown" role="button" aria-haspopup="true" 
 					 aria-expanded="false">Connect<span class="caret"></span></a>
 					 <ul class="dropdown-menu">
-					 	<li class="active"><a href="login.jsp">Login</a></li>
-					 	<li><a href="join.jsp">Join</a></li>
+					 	<li><a href="login.jsp">Login</a></li>
+					 	<li class="active"><a href="join.jsp">Join</a></li>
 					 </ul>
 				</li>
 			</ul>
@@ -43,15 +43,31 @@
 		<div class="col-lg-4"></div>
 		<div class="col-lg-4">
 			<div class="jumbotron" style="padding-top: 20px;">
-				<form method="post" action="loginAction.jsp">
-					<h3 style="text-align: center;">Login page</h3>
+				<form method="post" action="joinAction.jsp">
+					<h3 style="text-align: center;">Member Join</h3>
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Input your ID" name="userID" maxlength="20">
 					</div>	
 					<div class="form-group">
 						<input type="password" class="form-control" placeholder="Input your Password" name="userPassword" maxlength="20">
 					</div>
-					<input type="submit" class="btn btn-primary form-control" value="Login">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Input your Name" name="userName" maxlength="20">
+					</div>
+					<div class="form-group" style="text-align: center;">
+						<div class="btn-group" data-toggle="buttons">
+							<label class="btn btn-primary active">
+								<input type="radio" name="userGender" autocomplete="off" value="male" checked>Male
+							</label>
+							<label class="btn btn-primary">
+								<input type="radio" name="userGender" autocomplete="off" value="female" checked>Female
+							</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<input type="email" class="form-control" placeholder="Input your E-Mail" name="userEmail" maxlength="20">
+					</div>
+					<input type="submit" class="btn btn-primary form-control" value="Member Join">
 									
 				</form>
 			</div>
